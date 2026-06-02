@@ -1,59 +1,76 @@
-# IndicOCR – Multi-Language Text Identification
+# IndicOCR – Multi-Lingual OCR Evaluation Dataset
 
-A testing and evaluation repository for OCR-based text identification across English and Hindi scripts, developed under the guidance of **Dr. Anand Mishra**, Department of Computer Science & Engineering, IIT Jodhpur.
+A benchmark and evaluation repository for Optical Character Recognition (OCR) on English and Hindi text, developed under the guidance of Dr. Anand Mishra, Department of Computer Science & Engineering, Indian Institute of Technology Jodhpur (IITJ).
 
-The Actual Repo link to the IndicPhoto OCR developed by Anand mishra and other teamates is given [here]([https://www.google.com](https://github.com/Bhashini-IITJ/IndicPhotoOCR))
+## Project Overview
 
----
+IndicOCR is designed to evaluate OCR systems on real-world images containing both English and Hindi scripts. The repository provides a curated dataset of annotated images along with structured JSON annotations and OCR outputs, enabling systematic assessment of text detection, recognition, and script identification performance.
 
-## Overview
+The project serves as a resource for researchers and developers working in document analysis, scene text recognition, multilingual OCR, and computer vision.
 
-This project focuses on identifying and recognizing text from real-world images containing English and Hindi scripts using Optical Character Recognition (OCR) techniques. It includes a dataset of annotated images along with structured JSON outputs produced by the OCR pipeline.
+## Related Project
+
+The primary OCR framework used for generating and evaluating results is IndicPhotoOCR, developed by Dr. Anand Mishra and collaborators.
+
+Repository: https://github.com/Bhashini-IITJ/IndicPhotoOCR
 
 ---
 
 ## Repository Structure
 
-```
-IndicOCR_testing-master/
-├── DC_Images/
-│   └── Images/          # Input images (PNG/JPG) used for OCR testing
-├── DC_jsons/
-│   └── Jsons/           # Ground truth annotations with polygon coordinates,
-│                        # recognized text, and script/language labels
-└── Jsons_final/         # Final OCR output results per image
-```
+text IndicOCR_testing-master/ 
+├── DC_Images/ │   └── Images/              # Input images used for OCR evaluation │ 
+├── DC_jsons/ │   └── Jsons/               # Ground-truth annotations │                             # - Polygon coordinates │                             # - Text transcripts │                             # - Language labels 
+│ └── Jsons_final/             # OCR-generated output results 
 
----
+## Dataset Description
 
-## Dataset
+The dataset consists of:
 
-- **40 images** covering diverse real-world scenes with English and Hindi text
-- Each image has a corresponding JSON annotation file containing:
-  - Polygon bounding coordinates for each text region
-  - Recognized text string
-  - Script/language label (`English` / `Hindi`)
+- 40 annotated images containing English and Hindi text
+- Real-world scene images with diverse layouts and text styles
+- Ground-truth JSON annotations for each image
+- OCR-generated output files for performance comparison
 
----
+Each annotation includes:
 
-## Technologies
+- Polygon-based text region coordinates
+- Recognized text content
+- Script/language labels (English or Hindi)
 
-- **Language:** Python
-- **Domain:** Image Processing, Optical Character Recognition (OCR)
-- **Techniques:** Text region detection, script identification, preprocessing for improved recognition accuracy
+## Features
 
----
+- Multi-language OCR evaluation
+- English and Hindi script identification
+- Structured annotation format for benchmarking
+- Real-world scene text dataset
+- OCR output comparison and analysis
 
-## Key Contributions
+## Technologies Used
 
-- Worked on text identification for **English and Hindi** scripts using OCR techniques
-- Implemented **image preprocessing** steps to improve recognition performance
-- Structured OCR outputs into JSON format for evaluation and analysis
+- Python
+- Computer Vision
+- Optical Character Recognition (OCR)
+- Image Processing
+- Text Detection and Recognition
+- Script Identification
 
----
+## Contributions
 
-## Guide
+Key contributions of this work include:
 
-**Dr. Anand Mishra**  
-Department of Computer Science & Engineering  
+- Evaluation of OCR performance on English and Hindi scripts
+- Development of structured annotation datasets for benchmarking
+- Image preprocessing techniques to improve recognition accuracy
+- Generation and organization of OCR outputs in JSON format
+- Support for multilingual text recognition research
+
+## Research Guidance
+
+Dr. Anand Mishra  
+Professor, Department of Computer Science & Engineering  
 Indian Institute of Technology Jodhpur (IITJ)
+
+## Acknowledgements
+
+This repository is developed for research and evaluation purposes and builds upon the IndicPhotoOCR framework developed by the IIT Jodhpur research team.
